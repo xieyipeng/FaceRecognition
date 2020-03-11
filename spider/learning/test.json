@@ -1,0 +1,18 @@
+{
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "wd": "hello"
+  },
+  "headers": {
+    "Accept-Encoding": "identity",
+    "Content-Length": "8",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "Python-urllib/3.6"
+  },
+  "json": null,
+  "origin": "183.200.125.208, 183.200.125.208",
+  "url": "https://httpbin.org/post"
+}

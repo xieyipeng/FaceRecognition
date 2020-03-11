@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="ready-hide" xmlns="//www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="nofollow" />
+<title>消息提示</title>
+<link type="text/css" rel="stylesheet" href="/public/css/core.css"/>
+<link rel="stylesheet" href="//static.yaozh.com/css/app.css">
+<link rel="stylesheet" href="/public/css/index.new2.css?t=20180803">
+</head>
+<script>
+//设置domain
+document.domain = location.host.replace(/(\w|-)+\./,'');
+
+//全局变量 Global Variables
+var GV = {
+	JS_ROOT : '/public/js/',//js目录
+	JS_VERSION : "83E37B6798",
+	TOKEN : "83E37B6798",	//token $.ajaxSetup data
+	FILE_TYPE : "*.gif;*.jpg;*.png;*.zip;*.rar;*.txt;*.doc;*.docx;*.pdf;*.xls;*.xlsx;",
+	FILE_SIZE : "10 MB",
+	UID : parseInt(""),		//用户空间(参数 : uid)
+	URL : {
+		IMAGE : '/images/',										//登录地址
+		QUICK_LOGIN : '/ajax/login/?backurl=/login'
+	}
+};
+</script>
+<script src="/public/js/yaozh.js?v=20130531"></script>
+<script>
+Wind.use("jquery",function(){
+  if(!!window.frameElement){
+    $('html').addClass('iframe');
+  }	
+});
+
+</script>  <script>
+    var config = {
+      baseUrl : '//static.yaozh.com/js',
+      deps : ['/public/js/newindex2.js']
+    }
+  </script>
+  <script src="//static.yaozh.com/js/app.js?t=20150610"></script>
+<body>
+<!-- header -->
+<div class="header">
+	<div class="wrapper">
+	  <div class="header-left">
+	    	    	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://news.yaozh.com">新闻资讯</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://db.yaozh.com">药智数据</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://patent.yaozh.com">专利通</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://zx.yaozh.com/?yaozh">药智咨询</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://www.yaozh.com/zhihui/?yaozh">药智汇</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://s.yaozh.com">药智通</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://edu.yaozh.com/">药智学院</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://bbs.yaozh.com">论坛交流</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://club.yaozh.com/">俱乐部</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://yzs.yaozh.com/home">云诊所</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://gu.yaozh.com/ ">药智谷</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://nav.yaozh.com/">药智搜</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://yaozh.com/zt/index">专题中心</a>
+	      	    
+	    	    	      	    <a target="_blank" class="item" href="https://job.yaozh.com/">药智人才</a>
+	      	    
+	    	  </div>
+	  <div class="header-right">
+	            	            <a class="item" target="_blank" href="//www.yaozh.com/login/">登录</a>
+	            <a target="_blank" class="item" href="//www.yaozh.com/register/">注册</a>
+	                          <span class="item app">
+  <i class="fa"></i>
+  <span><a target="_blank" href="https://db.yaozh.com/app?ga_source=www&ga_name=sumlink_wwwty_top">药智数据APP</a></span>
+  <div class="hover-layer">
+    <div class="box">
+      <a target="_blank" href="https://itunes.apple.com/cn/app/id1025304074" onclick='ga("send", "event", "button", "click","appdownload_ios_wwwty_top")' target='_blank' class="btn btn-sm ios btn-gray">
+        <i class="fa"></i>
+        <span>iOS下载</span>
+      </a>
+      <a target="_blank" href="//static.yaozh.com/yaozh_latest.apk" onclick='ga("send", "event", "button", "click","appdownload_android_wwwty_top")' class="btn btn-sm android mt10 btn-green">
+        <i class="fa"></i>
+        <span>Android下载</span>
+      </a>
+      <div class="tc mt10">
+        <img src="/public/images/sumscan_wwwty_top.png?_v=1.5.26" alt="" style="width: 150px;">
+      </div>
+    </div>
+
+  </div>
+</span>                
+
+	  </div>
+	</div>
+</div>
+  <!-- header-bar -->
+  <div class="header-layer" data-widget="sticky" data-wrapperclass="header-bar">
+    <form class="wrapper" action="//db.yaozh.com/Search" target='_blank'>
+      <a target="_blank" href="//www.yaozh.com" class="logo" title="药智网" style="padding: 0;"></a>        
+      <div class="search-box">
+          <select class="search-type-select ignore-focus" name="btn_jiansuo" data-widget="dropdownSelect">
+            <option value="1" data-action="//db.yaozh.com/Search" data-key="content">数据库</option>
+            <option value="2" data-action="//s.yaozh.com/Index/search" data-key="search">药智通</option>
+            <option value="3" data-action="//www.yaozh.com/list/" data-key="keytitle">药智汇</option>
+            <!-- <option value="4" data-action="//bbs.yaozh.com/search.php?searchsubmit=yes" data-key="srchtxt">论坛</option> -->
+          </select>
+          <input class="search ignore-focus" name="content" type="text">
+          <a href="javascript:;" class="search-btn">搜索</a>
+      </div>
+      <a target="_blank" class="app_link" href="//db.yaozh.com/app">
+        <img src="/public/images/app_link.gif" alt="">
+      </a>
+       
+    </form>
+    <div class="m-show action-bar">
+      <a href="javascript:;" class="show-search"><i class="fa"></i></a>
+      <a href="javascript:;" class="show-menu"><i class="fa"></i></a>
+    </div>
+  </div>
+<div class="showmsg_warp clearfix">
+    <div class="showmsg_box warning">
+        <dl class="showmsgs">
+            <dt><p class="showmsg_left_bg"></p></dt>
+            <dd>
+                <div class="upheight">
+                    <p class="tit">您还未登录！</p>
+                    <p class="con">你可以给<a href="#">小智</a>吐个槽<br>紧急状况请联系药智客服：400-678-0778</p>
+                </div>
+                <p class="link"><span id="J_timer" class="Y_red">3</span>秒之后返回，<a id="J_url" data-url="/login" href="/login">如果没有跳转，请点击</a></p>
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="footer">
+  <div class="footer_1200">
+    <div class="footer_fr">
+      <div class=""><img width="111" height="111" src="/public/images/scan_wwwty_bottom_1.png?_v=1.5.26" alt=""></div>
+      <div>
+        药智数据APP
+      </div>
+    </div>
+<p>
+	<a href="http://about.yaozh.com/about.html">关于我们</a><span class="line">|</span>
+    <a href="http://about.yaozh.com/contact.html">联系我们</a><span class="line">|</span>
+    <a href="http://about.yaozh.com/qualification.html">企业资质</a><span class="line">|</span>
+    <a href="http://about.yaozh.com/join.html">诚聘英才</a><span class="line">|</span>
+    <a href="http://about.yaozh.com/link.html">友情链接</a><span class="line">|</span>
+	  <a href="//help.yaozh.com/" target="_blank">帮助中心</a><span class="line">|</span>
+    <a href="//bbs.yaozh.com/forum-123-1.html">媒体报道</a><span class="line">|</span>
+    <a href="//bbs.yaozh.com">药智论坛</a><span class="line">|</span>
+    <a href="//about.yaozh.com/about/sitemap">全站导航</a><span class="line">|</span>
+    <a href="//www.yaozh.com/ued?source=www&name=zhihui_footer">用户体验提升计划</a>
+    <a href="//www.yaozh.com/xuan">业务介绍</a>
+</p>
+<p>互联网增值电信业务许可证编号：渝B2-20120028 | 渝ICP备10200070号  互联网药品信息服务资格证：(渝)-经营性-2016-0011 渝公网备：50010801500236</p>
+<p>康洲大数据   版权所有   Copyright © 2009-2020 药智网YAOZH.COM All Rights Reserved.    法律顾问：上海锦天城（重庆）律师事务所 程建律师
+<script>
+/*GoogleAnaly*/
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-73321472-5', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<span style="display:none"><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " //");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F65968db3ac154c3089d7f9a4cbb98c94' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</span>
+</p>
+<p>客户服务热线：400-678-0778    E-mail：service@yaozh.com  商务合作QQ：845146016</p>
+<a id="netsafe" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010802001068"><img src="//www.yaozh.com/public/images/netsafe.png"/><p>渝公网安备 50010802001068号</p></a>
+<a id="outer-anquan"  key ="58fd5825efbfb064f4599465"  logo_size="83x30"  logo_type="realname"  href="http://www.anquan.org" ><script src="//static.anquan.org/static/outer/js/aq_auth.js"></script></a>
+<div class="tousu tousu1">
+  <img src="/public/images/tousu.png" alt="">
+  <div class="tousu-msg">
+    <p>投诉热线: 02362308742</p>
+    <p>邮箱: tousu@yaozh.com </p>
+    <p> QQ: 914894005</p>
+  </div>
+</div>
+
+
+
+
+  </div>
+</div>
+<script>
+  (function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https'){
+  bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+  })();
+
+  // 网站底部投诉信息
+  $(function () {
+    var tousu=$('.tousu')[0];
+    var tousumsg=$('.tousu-msg')[0];
+    tousu.onmouseover=function(){
+        tousumsg.style.display='block';
+    }
+    tousumsg.onmouseout=function(){
+        tousumsg.style.display='none';
+    }
+    function stop(e){
+        e.stopPropagation();
+    }
+    $(tousu).on('click',stop);
+    $(tousumsg).on('click',stop);
+    $(document).on('click',function(){
+        tousumsg.style.display='none';
+    })
+  })
+</script>
+
+<script>
+Wind.use("jquery", "global", function(){
+	window.history.forward(1);
+	var timer = parseInt($("#J_timer").html()),
+		url = $("#J_url").data("url");
+	function jump(){
+    if(window.frameElement){
+      window.frameElement.trigger("refresh");
+    }else if(url){
+      window.location.href = url;
+		}else{
+			history.go(-1);
+		}
+	}
+	if(!timer){
+		timer = 3;
+	}
+	var m_timer = setInterval(function(){
+		timer = timer - 1;
+		if(timer <=0){
+			jump();
+			clearInterval(m_timer);
+		}else{
+			$("#J_timer").html(timer);
+		}
+	},1000); //指定1秒刷新一次
+});
+</script>
+</body>
+</html>
