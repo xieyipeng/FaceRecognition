@@ -42,6 +42,7 @@ while True:
         try:
             # shape变为(48,48)
             face = cv2.resize(face, (48, 48))
+            print(face.shape)
         except:
             continue
 
