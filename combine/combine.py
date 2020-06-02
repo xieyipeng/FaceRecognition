@@ -232,7 +232,6 @@ while True:
             cv2.rectangle(frame, (int(rectangle[0]), int(rectangle[1])), (int(rectangle[2]), int(rectangle[3])),
                           (255, 0, 0), 1)
 
-
             # TODO: 表情识别
             emotion_queue.put(frame[int(y1):int(y2), int(x1):int(x2)])
             category, emotion_score = emotion_result_queue.get()
